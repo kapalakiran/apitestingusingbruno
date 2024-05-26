@@ -1,0 +1,15 @@
+meta {
+  name: List Users
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseurl}}/api/users?page
+  body: none
+  auth: none
+}
+
+query {
+  page: 
+}
