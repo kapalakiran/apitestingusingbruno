@@ -5,15 +5,25 @@ meta {
 }
 
 get {
-  url: {{baseurl}}/api/users?page
+  url: {{baseurl}}/api/users
   body: none
   auth: none
 }
 
-query {
-  page: 
-}
-
 assert {
   res.status: eq 200
+  res.body.total_pages: gte 2
+}
+
+tests {
+  test("status code verification", function() {
+    const data = res.getBody();
+    expect(res.getStatus()).to.equal(200);
+  });
+
+   test("status code verification", function() {
+    const data = res.getBody();
+    expect(data.total_pages).to.greaterThanOrEqual(2);
+  });
+   
 }

@@ -14,3 +14,7 @@ assert {
   res.status: eq 200
   res.body.total: gt 1
 }
+
+script:post-response {
+  console.log(res.body.page);
+}
