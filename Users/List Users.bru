@@ -5,9 +5,13 @@ meta {
 }
 
 get {
-  url: {{baseurl}}/api/users
+  url: {{baseurl}}/api/users/?page=2
   body: none
   auth: none
+}
+
+query {
+  page: 2
 }
 
 assert {
@@ -20,7 +24,7 @@ tests {
     const data = res.getBody();
     expect(res.getStatus()).to.equal(200);
   });
-
+  
    test("status code verification", function() {
     const data = res.getBody();
     expect(data.total_pages).to.greaterThanOrEqual(2);
