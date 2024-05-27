@@ -15,7 +15,9 @@ Following are the assertions which we can use to test the API -
     ![alt text](image-1.png)
 
 3. To add Query Parameter, add the following -
-   <img width="239" alt="image" src="https://github.com/kapalakiran/apitestingusingbruno/assets/36418742/c61f26ea-d0eb-465b-8a5f-d1d8ce6b52b7">
+
+   
+<img width="239" alt="image" src="https://github.com/kapalakiran/apitestingusingbruno/assets/36418742/c61f26ea-d0eb-465b-8a5f-d1d8ce6b52b7">
 
 
 <img width="423" alt="image" src="https://github.com/kapalakiran/apitestingusingbruno/assets/36418742/102175aa-28b6-4e45-8d77-7f8ad1014035">
